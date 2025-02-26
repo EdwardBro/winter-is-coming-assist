@@ -1,5 +1,5 @@
 # winter_is_coming_assist
-**Winter Is Coming Assistant** is an interactive guide and campaign assistant for the tabletop game *"A Game of Thrones" (2nd Edition)*. The app helps players quickly find the rules they need, resolve disputable game situations, and keep detailed campaign statistics.
+**Game of Thrones. Board Game Assistant** is an interactive guide and campaign assistant for the tabletop game *"A Game of Thrones" (2nd Edition)*. The app helps players quickly find the rules they need, resolve disputable game situations, and keep detailed campaign statistics.
 
 ## Features
 
