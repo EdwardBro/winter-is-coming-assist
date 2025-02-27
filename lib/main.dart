@@ -107,7 +107,79 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Welcome to Game of Thrones Helper!',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 20),
+
+            Card(
+              elevation: 4,
+              child: ListTile(
+                leading: const Icon(Icons.book),
+                title: const Text('Rules'),
+                subtitle: const Text('Search and view game rules quickly'),
+                onTap: () {
+                  // Навигация на экран Правил
+                  // Navigator.of(context).push(MaterialPageRoute(...));
+                },
+              ),
+            ),
+            const SizedBox(height: 10),
+            // Карточка для Кампании
+            Card(
+              elevation: 4,
+              child: ListTile(
+                leading: const Icon(Icons.history),
+                title: const Text('Campaign Log'),
+                subtitle: const Text('Record and analyze your campaign events'),
+                onTap: () {
+                  // Навигация на экран кампании
+                },
+              ),
+            ),
+            const SizedBox(height: 10),
+            // Карточка для Туториалов
+            Card(
+              elevation: 4,
+              child: ListTile(
+                leading: const Icon(Icons.school),
+                title: const Text('Tutorials'),
+                subtitle:
+                    const Text('Learn how to master complex game mechanics'),
+                onTap: () {
+                  // Навигация на экран туториалов
+                },
+              ),
+            ),
+            const SizedBox(height: 10),
+            // Карточка для Настроек
+            Card(
+              elevation: 4,
+              child: ListTile(
+                leading: const Icon(Icons.settings),
+                title: const Text('Settings'),
+                subtitle: const Text('Adjust app preferences'),
+                onTap: () {
+                  // Навигация на экран настроек
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }
 
 /*class _MyHomePageState extends State<MyHomePage> {
